@@ -364,7 +364,7 @@ void calcNextColors()
       else {
         if (e>0) {
           // energy to brightness is non-linear
-          byte eb = e;  // energymap[e>>3];
+          byte eb = energymap[e>>3];
           byte r = red_bias;
           byte g = green_bias;
           byte b = blue_bias;
